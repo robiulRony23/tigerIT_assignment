@@ -11,10 +11,12 @@
 	<groupId>com.assignment</groupId>
 	<artifactId>contactManagement</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+	<packaging>war</packaging>
 	<name>contactManagement</name>
 	<description>Contact Management System</description>
 	<properties>
 		<java.version>11</java.version>
+		<start-class>com.assignment.contactManagement.ContactManagementApplication</start-class>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -28,6 +30,10 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+		<dependency>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-tomcat</artifactId>
 		</dependency>
 
 		<dependency>
