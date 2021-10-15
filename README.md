@@ -1,3 +1,3 @@
 # tigerIT_assignment
 
-A simple contact management project with spring boot. As a database i have embedded database h2, for view page used thymleaf.
+A simple contact management project with spring boot. For database embedded database h2 and for view page thymeleaf is used.
