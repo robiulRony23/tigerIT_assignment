@@ -26,6 +26,26 @@ public class ContactService {
         return contacts;
     }
 
+    public List<Contact> getContactsByKeyword(String keyword){
+        return contactRepository.findByKeyword(keyword);
+    }
+
+    public List<Contact> getContactsByFirstName(String keyword){
+        return contactRepository.findByFirstName(keyword);
+    }
+
+    public List<Contact> getContactsByLastName(String keyword){
+        return contactRepository.findByLastName(keyword);
+    }
+
+    public List<Contact> getContactsByEmail(String keyword){
+        return contactRepository.findByEmail(keyword);
+    }
+
+    public List<Contact> getContactsByPhoneNo(String keyword){
+        return contactRepository.findByPhoneNo(keyword);
+    }
+
     public void addContact(Contact contact){
         contactRepository.save(contact);
     }
